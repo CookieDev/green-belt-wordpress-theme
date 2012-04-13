@@ -40,14 +40,15 @@
 	<!-- We use a wrapper so we can center all the content and give it a max width in the css -->
 	<div id="wrapper">
 	
-		<header id="oben">
-			<hgroup>
-				<h1><?php bloginfo('name'); ?></h1>
-				<p><?php bloginfo('description'); ?></p>
-			</hgroup>
+		<header id="header">
+                        <img id="logo" src="wp-content/themes/green-belt/assets/images/header_logo.png" alt="<?php bloginfo('name'); ?>" />
 		</header>
-		
-		<nav id="menu" role="main">
+            <div id="navi_wrapper">
+		<nav id="navi" role="main">
 			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 		</nav>
+                <div id="navi_shadow">
+                    
+                </div>
+            </div>
 

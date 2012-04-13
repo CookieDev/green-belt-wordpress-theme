@@ -32,11 +32,10 @@ a img { border:none } /* Gets rid of IE's blue borders */
 /* ----------------------------------------- */
 
 body {
-	font-family: ; 	/*Put in a font stack from the following comment block*/
+        background: repeat url(assets/images/body_background.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: ; 	/*Put in a font stack from the following comment block*/
 	font-weight: bold;
 } 
 
@@ -110,27 +109,47 @@ body {
 	overflow-y: scroll;	/*Always show the vertical scroll bar*/
 }
 
-/* We use a wrapper so we can center all the content and give it a max width */
 #wrapper {
-	max-width: 960px;	/* Everything will remain flexible with this */
-	margin: 0 auto; 	/* this centers elements which have a width defined */
-	padding: 1% 2%;		/* Give the content some room */
+    width: 840px;	
+    margin: 55px auto; 	
 }
 
-/*The main header*/
-#oben {
-	background: #993c8c; /*Fakultätsfarbe Philosophische Fakultät i, ii und iii*/
-	color: #fff;
+
+#header {
+    background: repeat url(assets/images/content_background.jpg);
+    width: 800px;
+    margin: 0 20px;
+    text-align: center;
 }
 
-/*The main navigation menu*/
-#menu {
-	
+#logo {
+    margin: 30px 0 18px 0;
+}
+
+
+#navi_wrapper {
+    background: no-repeat url(assets/images/navi_border.png);
+    width: 840px;
+}
+
+#navi {
+    background: repeat-x url(assets/images/navi_background.jpg);
+    width: 800px;
+    height: 35px;
+    margin: 0 20px;
+}
+
+#navi_shadow {
+    background: no-repeat url(assets/images/navi_shadow.png);
+    width: 840px;
+    height: 12px;
 }
 
 /*The main content*/
 #content {
-	
+    background: repeat url(assets/images/content_background.jpg);
+    width: 800px;
+    margin: 0 20px;
 }
 
 /*The Sidebar*/
