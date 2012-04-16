@@ -17,9 +17,7 @@
  */
 if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
 
-		<li>
-			<?php get_search_form(); ?>
-		</li>
+		
 
 		<li>
 			<h3><?php _e( 'Archives', 'twentyten' ); ?></h3>

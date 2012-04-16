@@ -44,9 +44,10 @@
                         <img id="logo" src="wp-content/themes/green-belt/assets/images/header_logo.png" alt="<?php bloginfo('name'); ?>" />
 		</header>
             <div id="navi_wrapper">
-		<nav id="navi" role="main">
+		<div id="navi">
 			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-		</nav>
+                        <?php get_search_form(); ?>
+		</div>
                 <div id="navi_shadow">
                     
                 </div>

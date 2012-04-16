@@ -105,10 +105,38 @@ body {
     text-decoration: none;
 }
 
-
 .menu li a:hover {
     color: #CCC;
 }
+
+#searchform {
+    margin: 7px 30px 0 25px;
+    color: #fff;
+    font-size: 1.3em;
+    float: right;
+}
+
+#searchform input {
+    -moz-border-radius:8px; /* Firefox */
+    -webkit-border-radius:8px; /* Safari, Chrome */
+    -khtml-border-radius:8px; /* Konqueror */
+    border-radius:8px; /* CSS3 */
+    padding: 0 5px;
+    outline: 0 none;
+    height: 17px;
+    width: 150px;
+}
+
+#searchform input.active {
+    color: #000;
+    font-size: 0.7em;
+}
+
+#searchform input.inactive {
+    color: #CCC;
+    font-size: 0.7em;
+}
+
 
 /*The main content*/
 #content {
