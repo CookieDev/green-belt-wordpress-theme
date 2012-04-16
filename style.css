@@ -33,72 +33,13 @@ a img { border:none } /* Gets rid of IE's blue borders */
 
 body {
         background: repeat url(assets/images/body_background.jpg);
+        font-size: 67.5%;
+        font-family: sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 } 
-
-
-/* Font stack options
-
-	The following represents a list of font stacks, as recommended by Nathan Ford in
-	http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
-
-	- - - -
-
-Arial, "Helvetica Neue", Helvetica, sans-serif
-
-Baskerville, "Times New Roman", Times, serif
-Baskerville, "Times, Times New Roman", serif
-
-Cambria, Georgia, Times, "Times New Roman", serif
-"Century Gothic", "Apple Gothic", sans-serif
-
-Consolas, "Lucida Console", Monaco, monospace
-
-"Copperplate Light", "Copperplate Gothic Light", serif
-
-"Courier New", Courier, monospace
-
-"Franklin Gothic Medium", "Arial Narrow Bold", Arial, sans-serif
-
-Futura, "Century Gothic", "Apple Gothic", sans-serif
-
-Garamond, "Hoefler Text", "Times New Roman", Times, serif
-Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif
-
-Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif
-Geneva, Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif
-
-Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
-Georgia, Times, "Times New Roman", serif
-
-GillSans, Calibri, Trebuchet, sans-serif
-GillSans, Trebuchet, Calibri, sans-serif
-
-"Helvetica Neue", Arial, Helvetica, sans-serif
-Helvetica, "Helvetica Neue", Arial, sans-serif
-
-Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif
-
-"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif
-
-Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif
-Palatino, "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif
-
-Tahoma, Geneva, Verdana
-Tahoma, Verdana, Geneva
-
-Times, "Times New Roman", Georgia, serif
-
-Trebuchet, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif
-Trebuchet, Tahoma, Arial, sans-serif
-
-Verdana, Geneva, Tahoma, sans-serif
-Verdana, Tahoma, Geneva, sans-serif
-
-*/
 
 
 
@@ -143,6 +84,29 @@ body {
     background: no-repeat url(assets/images/navi_shadow.png);
     width: 840px;
     height: 12px;
+}
+
+.menu {
+    
+}
+
+.menu li {
+    float: left;
+    margin: 10px 25px;
+}
+
+.menu li:first-child {
+    margin-left: 30px;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #CCC;
 }
 
 /*The main content*/
