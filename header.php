@@ -39,17 +39,22 @@
 	
 	<!-- We use a wrapper so we can center all the content and give it a max width in the css -->
 	<div id="wrapper">
-	
-		<header id="header">
-                        <img id="logo" src="wp-content/themes/green-belt/assets/images/header_logo.png" alt="<?php bloginfo('name'); ?>" />
-		</header>
-            <div id="navi_wrapper">
-		<div id="navi">
-			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-                        <?php get_search_form(); ?>
-		</div>
-                <div id="navi_shadow">
-                    
+            <div id="wrapper-top"></div>
+            <div id="wrapper-main">
+                <div id="navi_wrapper">
+                    <div id="navi">
+                            <?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+                            <?php get_search_form(); ?>
+                    </div>
+                    <div id="navi_shadow">
+
+                    </div>
                 </div>
-            </div>
+                <div id="content">
+                    <header id="header">
+                        <img id="logo" src="wp-content/themes/green-belt/assets/images/header_logo.png" alt="<?php bloginfo('name'); ?>" />
+                    </header>
+                
+		
+            
 

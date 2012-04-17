@@ -28,7 +28,7 @@ em { font-style:italic }
 a img { border:none } /* Gets rid of IE's blue borders */
 
 
-/* TYPOGRAPHY */
+
 /* ----------------------------------------- */
 
 body {
@@ -37,9 +37,21 @@ body {
         font-family: sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-} 
+h1 {
+    color: #535353;
+    font-family: serif;
+    font-size: 2.6em;
+    display: inline;
+}
+
+h1 a {
+    color: #535353;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: #212121;
+}
 
 
 
@@ -52,25 +64,38 @@ body {
 
 #wrapper {
     width: 840px;	
-    margin: 55px auto; 	
+    margin: 25px auto; 	
+}
+
+#wrapper-top {
+    width: 840px;
+    height: 30px;
+    background: no-repeat url(assets/images/wrapper_background-top.png);
+}
+
+#wrapper-main {
+    width: 840px;
+    background: repeat-y url(assets/images/wrapper_background-main.png);
+    position: relative;
 }
 
 
 #header {
     background: repeat url(assets/images/content_background.jpg);
     width: 800px;
-    margin: 0 20px;
     text-align: center;
 }
 
 #logo {
-    margin: 30px 0 18px 0;
+    margin: 28px 0 93px 0;
 }
 
 
 #navi_wrapper {
     background: no-repeat url(assets/images/navi_border.png);
     width: 840px;
+    position: absolute;
+    top: 110px;
 }
 
 #navi {
@@ -133,7 +158,7 @@ body {
 }
 
 #searchform input.inactive {
-    color: #CCC;
+    color: #999;
     font-size: 0.7em;
 }
 
@@ -145,14 +170,109 @@ body {
     margin: 0 20px;
 }
 
+.pubdate, .commentcount {
+    color: #888888;
+    font-size: 1em;
+    margin: 0 0 0 20px;
+}
+
+.pubdate a, .commentcount a {
+    color: #888888;
+    text-decoration: none;
+}
+
+.pubdate a:hover, .commentcount a:hover {
+    color: #212121;
+}
+
+#articles {
+    width: 500px;
+    padding: 14px 25px 0 35px;
+    float: left;
+}
+
+article p {
+    font-size: 1.3em;
+    color: #535353;
+    line-height: 1.8em;
+}
+
+article header {
+    margin: 0 0 15px 0;
+}
+
 /*The Sidebar*/
 #sidebar {
-	
+    width: 235px;
+    float: right;
+}
+
+#sidebar-top {
+    background: no-repeat url(assets/images/sidebar_background-top.png);
+    width: 235px;
+    height: 20px;
+}
+
+#sidebar-main {
+    background: repeat-y url(assets/images/sidebar_background-main.png);
+    width: 235px;
+}
+
+ul#sidebar-main li {
+    
+}
+
+ul#sidebar-main a {
+    color: #888888;
+    text-decoration: none;
+}
+
+ul#sidebar-main a:hover {
+    color: #212121;
+}
+
+ul#sidebar-main h3 {
+    padding: 5px 0;
+    color: #888888;
+    font-size: 1.5em;
+    margin: 20px 0 0 30px;
+}
+
+ul#sidebar-main li:first-child h3 {
+    margin: 0 0 0 30px;
+}
+
+ul#sidebar-main li  {
+    color: #888888;
+}
+
+ul#sidebar-main li ul li {
+    padding: 5px 15px 5px 45px;
+    border-bottom: 1px solid #dbdbdb; 
+    font-size: 1.3em;
+}
+
+ul#sidebar-main li ul li:first-child {
+    border-top: 1px solid #dbdbdb;
+}
+
+#sidebar-bottom {
+    background: no-repeat url(assets/images/sidebar_background-bottom.png);
+    width: 235px;
+    height: 20px;
 }
 
 /*The global Footer*/
 #unten {
 	
+}
+
+
+.floathelfer {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0px;
 }
 
 

@@ -5,7 +5,7 @@
 
 get_header(); ?>
 	
-	<section id="content">
+<div id="articles">
 	
 		<?php /* If there are no posts to display, such as an empty archive page */ ?>
 		<?php if (!have_posts()) : ?>
@@ -24,8 +24,8 @@ get_header(); ?>
 				
 				<header>
 					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-					<time pubdate datetime="<?php the_time('c'); ?>"><?php printf( __('Posted on %s at %s.','roots'), get_the_time('l, F jS, Y'), get_the_time()) ?></time>
-					<p class="byline author vcard"><span class="fn"><?php the_author(); ?></span></p>
+                                        <time class="pubdate" pubdate datetime="<?php the_time('c'); ?>"><?php printf( __('%s','roots'), get_the_time('j. F Y'), get_the_time()) ?></time>
+                                        <span class="commentcount"><a href="<?php comments_link(); ?>"><?php comments_number( 'Keine Kommentare', '1 Kommentar', '% Kommentare' ); ?></a></span>
 				</header>
 				
 				<?php the_content(__( 'Continue reading &rarr;', 'twentyten' )); ?>
@@ -39,7 +39,7 @@ get_header(); ?>
 			
 		<?php endwhile; ?>
 	
-	</section>
+</div>
 	
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

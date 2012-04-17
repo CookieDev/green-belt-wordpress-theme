@@ -4,10 +4,11 @@
  */
 ?>
 
-	<aside id="sidebar">
+	<div id="sidebar">
 		
+            <div id="sidebar-top"></div>
 	
-		<ul class="xoxo">
+		<ul class="xoxo" id="sidebar-main">
 
 <?php
 /* When we call the dynamic_sidebar() function, it'll spit out
@@ -38,4 +39,6 @@ if ( ! dynamic_sidebar( 'primary-widget-area' ) ) : ?>
 	<?php endif; ?>
 		</ul>
 
-	</aside>
+            <div id="sidebar-bottom"></div>
+            
+	</div>
