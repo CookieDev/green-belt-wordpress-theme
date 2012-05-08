@@ -3,18 +3,13 @@
  * The template for displaying the footer.
  */
 ?>
-            <div class="floathelfer"></div>
-	</div>
-            </div>
-		<footer id="unten">
-			<p><small>
-				<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> | 
-				<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress </a>
-			</small></p>
-			<p><small>
-				<a href="https://github.com/kremalicious/minimalmuk">minimalMuk Theme</a> by <a href="http://matthiaskretschmann.com/">Matthias Kretschmann</a> &amp; <a href="http://www.anketornow.de/">Anke Tornow</a>
-			</small></p>
+                <footer>
+                    <?php dynamic_sidebar('first-footer-widget-area'); ?>
 		</footer>
+            </div>
+	</div>
+        
+		
 	
 	</div> <!--END #wrapper-->
 

@@ -191,6 +191,12 @@ body {
     float: left;
 }
 
+article {
+    background: url(assets/images/content_divisor.png) no-repeat bottom center;
+    padding: 0 0 45px 0;
+    margin: 0 0 50px 0;
+}
+
 article p {
     font-size: 1.3em;
     color: #535353;
@@ -218,41 +224,41 @@ article header {
     width: 235px;
 }
 
-ul#sidebar-main li {
+ul#sidebar-main li, #content > footer ul {
     
 }
 
-ul#sidebar-main a {
+ul#sidebar-main a, #content > footer ul li a {
     color: #888888;
     text-decoration: none;
 }
 
-ul#sidebar-main a:hover {
+ul#sidebar-main a:hover, #content > footer ul li a:hover {
     color: #212121;
-}
+} 
 
-ul#sidebar-main h3 {
+ul#sidebar-main h3, #content > footer h4 {
     padding: 5px 0;
     color: #888888;
     font-size: 1.5em;
     margin: 20px 0 0 30px;
 }
 
-ul#sidebar-main li:first-child h3 {
+ul#sidebar-main li:first-child h3, #content > footer ul li:first-child h4 {
     margin: 0 0 0 30px;
 }
 
-ul#sidebar-main li  {
+ul#sidebar-main li, #content > footer ul li  {
     color: #888888;
 }
 
-ul#sidebar-main li ul li {
+ul#sidebar-main li ul li, #content > footer ul li ul li {
     padding: 5px 15px 5px 45px;
     border-bottom: 1px solid #dbdbdb; 
     font-size: 1.3em;
 }
 
-ul#sidebar-main li ul li:first-child {
+ul#sidebar-main li ul li:first-child, #content > footer ul li ul li:first-child {
     border-top: 1px solid #dbdbdb;
 }
 
@@ -262,9 +268,12 @@ ul#sidebar-main li ul li:first-child {
     height: 20px;
 }
 
-/*The global Footer*/
-#unten {
-	
+
+
+
+#content > footer {
+    clear: both;
+    
 }
 
 

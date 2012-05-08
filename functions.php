@@ -19,6 +19,15 @@ function minimalmuk_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+        register_sidebar(array(
+		'name' => __( 'Foot #1', 'c4' ),
+		'id' => 'first-footer-widget-area',
+		'description' => __( 'Foot #1', 'c4' ),
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+	) );
 }
 add_action( 'widgets_init', 'minimalmuk_widgets_init' );
 
